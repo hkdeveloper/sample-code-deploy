@@ -1,4 +1,5 @@
 #!/bin/bash
 mvn clean install
+cp target/CounterWebApp.war /var/lib/tomcat7/webapps
 service httpd start
 service tomcat7 start
